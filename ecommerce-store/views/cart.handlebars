@@ -1,0 +1,12 @@
+<h1>Shopping Cart</h1>
+
+{{#if cartItems.length}}
+<ul>
+  {{#each cartItems}}
+  <li>{{this.name}} - ${{this.price}}</li>
+  {{/each}}
+</ul>
+<p>Total: ${{total}}</p>
+{{else}}
+<p>Your cart is empty.</p>
+{{/if}}

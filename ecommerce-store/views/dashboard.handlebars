@@ -1,0 +1,10 @@
+{{#if isAuthenticated}}
+<h1>Dashboard</h1>
+<p>Welcome, User!</p>
+<p>You are now logged in and can access the dashboard.</p>
+<a href="/cart">View Shopping Cart</a>
+<a href="/logout">Logout</a>
+{{else}}
+<h1>Access Denied</h1>
+<p>You must be logged in to access the dashboard.</p>
+{{/if}}
